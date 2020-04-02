@@ -3,7 +3,7 @@ $password = "enter domain password here" | ConvertTo-SecureString -asPlainText -
 $username = "$domain\enter domain admin name here" 
 $credential = New-Object System.Management.Automation.PSCredential($username,$password)
 $localuser = $env:UserName
-$dns = "10.10.1.5"
+$dns = "enter ip of your DNS here"
 $adapter = Get-NetAdapter | ? {$_.Status -eq "up"}
 
 ECHO changing adapter DNS
