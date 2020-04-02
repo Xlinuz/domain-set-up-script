@@ -9,8 +9,9 @@ $adapter = Get-NetAdapter | ? {$_.Status -eq "up"}
 ECHO changing adapter DNS
 $adapter | Set-DnsClientServerAddress -ServerAddresses $dns
 
-ECHO changing password
-net user $localuser ~2020
+#if you want to change the local admin password, remove the hashtags below
+#ECHO changing password
+#net user $localuser enter-password-here
 
 ECHO removing from domain
 remove-Computer -Credential $credential -force
