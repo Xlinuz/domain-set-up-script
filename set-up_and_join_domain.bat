@@ -7,7 +7,7 @@ goto selection
 color 2
 cls
 ECHO.
-ECHO Welcome to the KCS setup utility, you're making changes to %computername%
+ECHO Welcome to the ORGANIZATION NAME setup utility, you're making changes to %computername%
 ECHO ----------------------------------------------------------------------------------------------------------------------
 ECHO 1) Join Domain
 ECHO 2) Enable Wake-on-LAN
