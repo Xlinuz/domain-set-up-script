@@ -7,6 +7,9 @@ goto selection
 color 2
 cls
 ECHO.
+ECHO Welcome to the KCS setup utility, your computer info:
+ECHO.
+wmic computersystem get model,name,manufacturer,systemtype,domain
 ECHO Welcome to the ORGANIZATION NAME setup utility, you're making changes to %computername%
 ECHO ----------------------------------------------------------------------------------------------------------------------
 ECHO 1) Join Domain
@@ -39,7 +42,7 @@ cls
 ECHO.
 ECHO ----------------------------------------------------------------------------------------------------------------------
 ECHO Running Powershell script to join to Domain
-Powershell.exe -ExecutionPolicy Unrestricted -File %dir_home%\domain_super_pally_script_900.ps1
+Powershell.exe -ExecutionPolicy Unrestricted -File %dir_home%\domain_super_pally_script_9000.ps1
 ECHO ----------------------------------------------------------------------------------------------------------------------
 ECHO.
 PAUSE
